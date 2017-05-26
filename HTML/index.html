@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+	<title>jQuery Mobile: Theme Download</title>
+	
+	<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css" /> 
+	<link rel="stylesheet" href="css/JMcCann.css" />
+	<link rel="stylesheet" href="css/JMcCann.min.css" />
+	<link rel="stylesheet" href="css/jquery.mobile.icons.min.css" />
+	<script src="scripts/jquery-1.11.3.min.js"></script> 
+	<script src="scripts/jquery.mobile-1.4.5.min.js"></script>
+    </head>
+    <body>
+        
+        	        <div id="mainpage" data-role="page" data-theme="a">
+        <div data-role="header">
+      	  <h1>JMcCann Test App</h1>
+    	</div>
+   		<div data-role="content"></div>
+			<ul data-role="listview">
+				<li><a href="#mainpage">Home</a></li>
+				<li><a href="#search">Search</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+  			<h2>JMcCann Test App Advanced Mobile Web Dev</h2>
+			<p>This page is a test for Advanced Web Development</p>
+  			<div data-role="footer" >
+	  			<h4>JMcCann App &copy; 2017</h4>
+			</div>
+   		</div>
+		<div id="about" data-role="page" data-theme="a">
+   		<div id="nav_about" data-role="panel" data-display="reveal">
+   			<ul data-role="listview">
+				<li><a href="#mainpage">Home</a></li>
+				<li><a href="#search">Search</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+   		</div>
+   		<div data-role="header" >
+   			<a href="#nav_about" class="ui-btn-a ui-btn-corner-all ui-shadow-icon">Nav</a>
+   			<h1>About Hedwig Garage</h1>
+   		</div>
+   			<div data-role="content">
+	   		<p>Litterally just a test place holder.  Created by JMcCann 2017.</p>
+
+			<p><a href="mailto:joshua.mccann@smail.rasmussen.edu">Joshua McCann</a></p>
+			</div>
+			<div data-role="footer">
+	  			<h4>JMcCann App &copy; 2017</h4>
+			</div>
+		</div>
+		<div id="search" data-role="page">
+  		<div id="nav_search" data-role="panel" data-display="reveal">
+   			<ul data-role="listview">
+				<li><a href="#mainpage">Home</a></li>
+				<li><a href="#search">Search</a></li>
+				<li><a href="#about">About</a></li>
+			</ul>
+   		</div>
+   		<div data-role="header">
+   			<a href="#nav_search">Nav</a>
+   			<h1>PHP Search Tool</h1>
+   		</div>
+   			<div data-role="content">
+	   		<form method="post" action="find.php">
+	   <div data-role="fieldcontain">
+	     <div data-role="fieldcontain">
+	       <label for="fname">First Name:</label>
+	       <input type="fname" name="fname" id="fname" value=""  />
+         </div>
+         <div data-role="fieldcontain">
+	       <label for="lname">Last Name:</label>
+	       <input type="lname" name="lname" id="lname" value=""  />
+         </div>
+	     <input name="find" input type="submit" id="add" value="Submit">
+       </div>
+	 	
+	 </form>
+			</div>
+			<div data-role="footer">
+	  			<h4>JMcCann App &copy; 2017</h4>
+			</div>
+		</div>
+    </body>
+</html>
