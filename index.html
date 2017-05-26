@@ -22,6 +22,7 @@
 			<ul data-role="listview">
 				<li><a href="#mainpage">Home</a></li>
 				<li><a href="#search">Search</a></li>
+				<li><a href="#confirm">Order Confirmation</a></li>
 				<li><a href="#about">About</a></li>
 			</ul>
   			<h2>JMcCann Test App Advanced Mobile Web Dev</h2>
@@ -35,12 +36,13 @@
    			<ul data-role="listview">
 				<li><a href="#mainpage">Home</a></li>
 				<li><a href="#search">Search</a></li>
+				<li><a href="#confirm">Order Confirmation</a></li>
 				<li><a href="#about">About</a></li>
 			</ul>
    		</div>
    		<div data-role="header" >
    			<a href="#nav_about" class="ui-btn-a ui-btn-corner-all ui-shadow-icon">Nav</a>
-   			<h1>About Hedwig Garage</h1>
+   			<h1>About This App</h1>
    		</div>
    			<div data-role="content">
 	   		<p>Litterally just a test place holder.  Created by JMcCann 2017.</p>
@@ -56,6 +58,7 @@
    			<ul data-role="listview">
 				<li><a href="#mainpage">Home</a></li>
 				<li><a href="#search">Search</a></li>
+				<li><a href="#confirm">Order Confirmation</a></li>
 				<li><a href="#about">About</a></li>
 			</ul>
    		</div>
@@ -79,6 +82,31 @@
 	 	
 	 </form>
 			</div>
+			<div data-role="footer">
+	  			<h4>JMcCann App &copy; 2017</h4>
+			</div>
+		</div>
+   		<div id="confirm" data-role="page" data-theme="a">
+   			<div id="nav_confirm" data-role="panel" data-display="reveal">
+   				<ul data-role="listview">
+					<li><a href="#mainpage">Home</a></li>
+					<li><a href="#search">Search</a></li>
+					<li><a href="#confirm">Order Confirmation</a></li>
+					<li><a href="#about">About</a></li>
+				</ul>
+   			</div>
+   			<div data-role="header" >
+   				<a href="#nav_confirm" class="ui-btn-a ui-btn-corner-all ui-shadow-icon">Nav</a>
+   				<h1>Order Confirmation</h1>
+   			</div>
+   			<div data-role="content">
+   			<form method="post" action="order.php">
+	   				<div data-role="fieldcontain">
+	       				<label for="order">Order:</label>
+	       				<input type="order" name="order" id="lname" value=""  />
+         			</div>
+				</form>
+   			</div>
 			<div data-role="footer">
 	  			<h4>JMcCann App &copy; 2017</h4>
 			</div>
