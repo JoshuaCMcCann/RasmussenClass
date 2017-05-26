@@ -27,7 +27,7 @@
 
 					$sql= "SELECT id, fname, lname, email
 					FROM testtable
-					WHERE fname LIKE CONCAT('%','$fname','%') AND lname LIKE CONCAT('%','$lname','%') LIMIT 50";
+					WHERE fname LIKE CONCAT('%','$fname','%') AND lname LIKE CONCAT('%','$lname','%')";
 					$result = mysqli_query($conn, $sql);
 
 					if (mysqli_num_rows($result) > 0) {
@@ -46,8 +46,8 @@
 
 					?>
 
-				<div data-role="footer" data-theme="a">
-	  <h4>Darice Corey-Gilbert &copy; 2016</h4>
-	</div>
+			<div data-role="footer">
+	  			<h4>JMcCann App &copy; 2017</h4>
+			</div>
 	</body>
 </html>
