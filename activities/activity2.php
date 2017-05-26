@@ -20,8 +20,8 @@
 
 
 					<?php
-					include 'config.php';
-					include 'opendb.php';
+					include '../config.php';
+					include '../opendb.php';
 
 					$conf_num = (isset($_POST['conf_num'])    ? $_POST['conf_num']   : '');
 
