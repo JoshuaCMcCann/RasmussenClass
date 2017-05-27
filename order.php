@@ -22,11 +22,11 @@
 					include 'config.php';
 					include 'opendb.php';
 
-					$order = (isset($_POST['fname'])    ? $_POST['fname']   : '');
+					$order = (isset($_POST['order'])    ? $_POST['order']   : '');
 
 					$sql= "SELECT testorders.confirmationNumber, testtable.fname, testtable.lname, testtable.email, testorders.salesAmount, 	 products.ProductName
-						FROM testtable
-						JOIN testorders on testorders.customerID = testtable.id
+						FROM testorders
+						JOIN testtable on testorders.customerID = testtable.id
 						JOIN products on testorders.productID = products.ProductID
                     	WHERE fname LIKE '$order'";
 					$result = mysqli_query($conn, $sql);
