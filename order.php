@@ -22,7 +22,7 @@
 					include 'config.php';
 					include 'opendb.php';
 
-					$order = (isset($_POST['confirmationNumber'])    ? $_POST['confirmationNumber']   : '');
+					//$order = (isset($_POST['confirmationNumber'])    ? $_POST['confirmationNumber']   : '');
 
 					$sql= "SELECT testorders.confirmationNumber, testtable.fname, testtable.lname, testtable.email, testorders.salesAmount, 	 products.ProductName
 						FROM testorders
