@@ -34,10 +34,12 @@
 					if (mysqli_num_rows($result) > 0) {
 					    // output data of each row
 					    while($row = mysqli_fetch_assoc($result)) {
-									echo "ID: " . $row["id"]. "<br>";
-					        echo "First Name: " . $row["fname"]. "<br>";
-					        echo "Last Name: " . $row["lname"]. "<br>";
-							echo "Email: " . $row['email'] . "<br><hr>";
+									echo "Confirmation Number: " . $row["testorders.confirmationNumber"]. "<br>";
+					        echo "First Name: " . $row["testtable.fname"]. "<br>";
+					        echo "Last Name: " . $row["testtable.lname"]. "<br>";
+							echo "Email: " . $row['testtable.email'] . "<br>";
+							echo "Total: " . $row["testorders.salesAmount"]. "<br>";
+							echo "Product: " . $row["testorders.ProductID"]. "<br><hr>";
 					    }
 					} else {
 					    echo "0 results";
