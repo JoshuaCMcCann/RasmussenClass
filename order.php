@@ -22,13 +22,13 @@
 					include 'config.php';
 					include 'opendb.php';
 
-					$order = (isset($_POST['confirmationNumber'])    ? $_POST['confirmationNumber']   : '');
+					$order = (isset($_POST['fname'])    ? $_POST['fname']   : '');
 
 					$sql= "SELECT testorders.confirmationNumber, testtable.fname, testtable.lname, testtable.email, testorders.salesAmount, 	 products.ProductName
-						FROM testorders
-						JOIN testtable on testorders.customerID = testtable.id
+						FROM testtable
+						JOIN testorders on testorders.customerID = testtable.id
 						JOIN products on testorders.productID = products.ProductID
-                    	WHERE confirmationNumber LIKE '$order'";
+                    	WHERE fname LIKE '$order'";
 					$result = mysqli_query($conn, $sql);
 
 					if (mysqli_num_rows($result) > 0) {
