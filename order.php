@@ -25,10 +25,10 @@
 					$order = (isset($_POST['confirmationNumber'])    ? $_POST['confirmationNumber']   : '');
 
 					$sql= "SELECT testorders.confirmationNumber, testtable.fname, testtable.lname, testtable.email, testorders.salesAmount, products.ProductName
-					FROM testorders
-					JOIN testtable on testorders.customerID = testtable.id
-					JOIN products on testorders.productID = products.ProductID
-					WHERE confirmationNumber LIKE '$order'";
+						FROM testorders
+						JOIN testtable on testorders.customerID = testtable.id
+						JOIN products on testorders.productID = products.ProductID
+						WHERE confirmationNumber LIKE '$order'";
 					$result = mysqli_query($conn, $sql);
 
 					if (mysqli_num_rows($result) > 0) {
@@ -39,7 +39,7 @@
 					        echo "Last Name: " . $row["lname"]. "<br>";
 							echo "Email: " . $row['email'] . "<br>";
 							echo "Total: " . $row["salesAmount"]. "<br>";
-							echo "Product: " . $row["ProductID"]. "<br><hr>";
+							echo "Product: " . $row["ProductName"]. "<br><hr>";
 					    }
 					} else {
 					    echo "0 results";
