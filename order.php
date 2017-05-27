@@ -28,7 +28,7 @@
 						FROM testorders
 						JOIN testtable on testorders.customerID = testtable.id
 						JOIN products on testorders.productID = products.ProductID
-                    	WHERE testorders.confirmationNumber LIKE '$order' ";
+                    	WHERE confirmationNumber LIKE '$order'";
 					$result = mysqli_query($conn, $sql);
 
 					if (mysqli_num_rows($result) > 0) {
