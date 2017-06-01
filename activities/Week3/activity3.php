@@ -35,11 +35,11 @@
 					if (mysqli_num_rows($result) > 0) {
 					    // output data of each row
 					    while($row = mysqli_fetch_assoc($result)) {
-									echo "Client ID: " . $row["clients.clientid"]. "<br>";
-					        echo "First Name: " . $row["clients.fname"]. "<br>";
-					        echo "Last Name: " . $row["clients.lname"]. "<br>";
-									echo "Membership Category: " . $row["membership.category"]. "<br>";
-									echo "Membership Description: " . $row["membership.description"]. "<br>";
+									echo "Client ID: " . $row["clientID"]. "<br>";
+					        echo "First Name: " . $row["fname"]. "<br>";
+					        echo "Last Name: " . $row["lname"]. "<br>";
+									echo "Membership Category: " . $row["category"]. "<br>";
+									echo "Membership Description: " . $row["description"]. "<br>";
 									echo "Sales Rep: " . $row["salesrep"]. "<br>";
 					    }
 					} else {
