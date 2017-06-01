@@ -24,11 +24,11 @@
 
 					$order = (isset($_POST['order'])    ? $_POST['order']   : '');
 
-					$sql= "SELECT testorders.confirmationNumber, testtable.fname, testtable.lname, testtable.email, testorders.salesAmount, 	 products.ProductName
-						FROM testorders
-						JOIN testtable on testorders.customerID = testtable.id
-						JOIN products on testorders.productID = products.ProductID
-                    	WHERE confirmationNumber LIKE '$order'";
+					$sql= "SELECT A.confirmationNumber, B.fname, B.lname, B.email, A.salesAmount, 	 C.ProductName
+						FROM testorders AS A
+						LEFT JOIN testtable AS B on A.customerID = B.id
+						LEFT JOIN products AS C on A.productID = C.ProductID
+                    	WHERE A.confirmationNumber LIKE '$order'";
 					$result = mysqli_query($conn, $sql);
 
 					if (mysqli_num_rows($result) > 0) {
