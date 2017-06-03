@@ -39,8 +39,7 @@
 					        echo "First Name: " . $row["fname"]. "<br>";
 					        echo "Last Name: " . $row["lname"]. "<br>";
 									echo "Membership Category: " . $row["category"]. "<br>";
-									echo "Membership Description: " . $row["description"]. "<br>";
-									echo "Sales Rep: " . $row["salesrep"]. "<br>";
+									echo "Membership Description: " . $row["description"]. "<br><hr>";
 					    }
 					} else {
 					    echo "0 results";
