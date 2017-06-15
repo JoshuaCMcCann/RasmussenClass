@@ -11,14 +11,43 @@
 		<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<script src="javascript/storage.js"></script>
 		<script src="https://apis.google.com/js/platform.js" async defer></script>
+		
+		<script>
+			var Notification = window.Notification || window.mozNotification || window.webkitNotification;
+
+				Notification.requestPermission(function (permission) {
+				// console.log(permission);
+				});
+
+			function show() {
+				var instance = new Notification(
+					"Test Notification", {
+							body: "Test notification to be displayed for week 5"
+					}
+				);
+
+				instance.onclick = function () {
+						// Something to do
+					};
+				instance.onerror = function () {
+						// Something to do
+				};
+				instance.onshow = function () {
+						// Something to do
+				};
+				instance.onclose = function () {
+						// Something to do
+				};
+			}
+		</script>
 	</head>
 	<body>
 		<div id="page" data-role="page" data-theme="b" >
 			<div data-role="header" data-theme="b">
-				<h1>Test Google Login</h1>
+				<h1>Test Notification Button</h1>
 			</div>
 			<div data-role="content">
-				<div class="g-signin2" data-onsuccess="onSignIn"></div>
+				<button type="button" onclick="show()">Notify me!</button>
 			</div>
 			<div data-role="footer" data-theme="b">
 	  			<h4>Joshua McCann &copy; 2017</h4>

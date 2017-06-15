@@ -5,5 +5,6 @@
 <file name="config.php" server="waws-prod-sn1-011.ftp.azurewebsites.windows.net//site/wwwroot/" local="131403142200000000" remote="131403142200000000" Dst="2" />
 <file name="displayall.php" server="waws-prod-sn1-011.ftp.azurewebsites.windows.net//site/wwwroot/" local="131403142200000000" remote="131403142200000000" Dst="2" />
 <file name="opendb.php" server="waws-prod-sn1-011.ftp.azurewebsites.windows.net//site/wwwroot/" local="131403142200000000" remote="131403142200000000" Dst="2" />
-<file name="platform.js" server="waws-prod-sn1-011.ftp.azurewebsites.windows.net//site/wwwroot/" local="131397261000000000" remote="131397261000000000" Dst="2" />
+<file name="platform.js" server="waws-prod-sn1-011.ftp.azurewebsites.windows.net//site/wwwroot/" local="131403168600000000" remote="131403168600000000" Dst="2" />
+<file name="order.php" server="waws-prod-sn1-011.ftp.azurewebsites.windows.net//site/wwwroot/" local="131407759800000000" remote="131407759800000000" Dst="2" />
 </dwsync>
